@@ -1,6 +1,10 @@
 function Card({ data }) {
   return (
     <div id="card">
+       <div className="nameID">
+       <td className="name">{data?.name}</td>
+       <td># {data?.id}</td>
+       </div>
       <div id="cardDiv-first">
         <img src={data?.sprites.other.home.front_default} alt={data?.name} />
       </div>
@@ -14,14 +18,6 @@ function Card({ data }) {
           </thead>
           <tbody>
             <tr>
-              <td>ID</td>
-              <td>{data?.id}</td>
-            </tr>
-            <tr>
-              <td>Nombre</td>
-              <td>{data?.name}</td>
-            </tr>
-            <tr>
               <td>Altura</td>
               <td>{data?.height}</td>
             </tr>
@@ -30,7 +26,7 @@ function Card({ data }) {
               <td>{data?.weight}</td>
             </tr>
             <tr>
-              <td>Experiencia base</td>
+              <td>Experiencia</td>
               <td>{data?.base_experience}</td>
             </tr>
           </tbody>

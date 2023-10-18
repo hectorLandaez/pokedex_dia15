@@ -16,15 +16,14 @@ function App() {
 
   return (
     <main>
+      <h1>POKEDEX</h1>
       <div id="firstDiv">
         <form onSubmit={changePokemon}>
-          <label>Escribe el nombre específico de un pokemon:</label>
-          <input type="text" />
-
+          <input type="text" placeholder="FILTRA POR NOMBRE "/>
           <button type="submit">Buscar</button>
         </form>
         <div>
-          <span>Filtra según escribes: </span>
+          <span>CATALOGO</span>
           <div id="firstDiv-second">
             <input
               type="text"
@@ -41,14 +40,6 @@ function App() {
               </ul>
             )}
           </div>
-        </div>
-        <div>
-          <button value="pikachu" onClick={handleClick}>
-            Pikachu
-          </button>
-          <button value="charizard" onClick={handleClick}>
-            Charizard
-          </button>
         </div>
       </div>
 
